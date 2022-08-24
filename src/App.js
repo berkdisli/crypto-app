@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import axios from axios;
+
+const axios = require('axios').default;
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -26,12 +27,9 @@ function App() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        {/* <h1 className="coin-text">Search your desired coin</h1> */}
         <form action="">
           <input type="text" className="coin-input" placeholder="Provide the coin name" onChange={handleChange} />
-
         </form>
-
       </div>
 
 
