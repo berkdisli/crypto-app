@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import logo from './logo.svg';
 import './App.css';
+import Coin from './coin';
 
 const axios = require('axios').default;
 
@@ -32,7 +33,18 @@ function App() {
         </form>
       </div>
 
-
+      {filteredCoins.map(coin => {
+        return (
+          <Coin
+            key={coin.id}
+            name={coin.name}
+            symbol={coin.symbol}
+            marketcap={coin.market_cap}
+            price={coin.current_price}
+            pricechange={coin.price_change_percentage_24h}
+          />
+        )
+      })}
     </div>
   );
 }
