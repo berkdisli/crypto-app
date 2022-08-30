@@ -29,7 +29,7 @@ function App() {
     <div className="coin-app">
       <div className="coin-search">
         <form action="">
-          <input type="text" className="coin-input" placeholder="Provide the coin name" onChange={handleChange} />
+          <input type="text" className="coin-input" placeholder="Search the coin..." onChange={handleChange} />
         </form>
       </div>
 
@@ -38,10 +38,11 @@ function App() {
           <Coin
             key={coin.id}
             name={coin.name}
+            image={coin.image}
             symbol={coin.symbol}
-            marketcap={coin.market_cap}
+            marketCap={coin.market_cap}
             price={coin.current_price}
-            pricechange={coin.price_change_percentage_24h}
+            priceChange={coin.price_change_percentage_24h}
           />
         )
       })}

@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Bree Serif";
-  color: #fff;
-  background-color: rgb(9, 15, 75);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
 .coin-app {
   display: flex;
@@ -26,19 +26,22 @@
   text-align: center;
 }
 .coin-input {
+  font-size: 15px;
+  font-family: "Roboto";
   padding-left: 16px;
   width: 300px;
   height: 50px;
-  border-radius: 4px;
-  border: none;
+  border-radius: 8px;
+  border-color: #e7e1e1;
+  border-width: 1px;
   background-image: linear-gradient(
     to right,
     #ffffff 0%,
-    #daeff7 31%,
-    #b8ddec 100%
+    #f7fdff 50%,
+    #f5ffff 100%
   );
   color: #000000;
 }
 .coin-input::placeholder {
-  color: #4d4a4a;
+  color: #a79696;
 }
