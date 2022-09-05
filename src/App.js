@@ -31,7 +31,13 @@ function App() {
           <input type="text" className="coin-input" placeholder="Search the coin..." onChange={handleChange} />
         </form>
       </div>
-
+      <ul className='tabs'>
+        <li className='tab'>Coin</li>
+        <li className='tab'>Symbol</li>
+        <li className='tab'>Price</li>
+        <li className='tab'>24h</li>
+        <li className='tab'>Market Cap</li>
+      </ul>
       {filteredCoins.map(coin => {
         return (
           <Coin
