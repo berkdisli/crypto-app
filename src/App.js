@@ -33,7 +33,7 @@ function App() {
       </div>
       <ul className='tabs'>
         <li className='tab'>Coin</li>
-        <li className='tab'>Symbol</li>
+        <li className='symbol'>Symbol</li>
         <li className='tab'>Price</li>
         <li className='tab'>24h</li>
         <li className='tab'>Market Cap</li>
@@ -45,9 +45,9 @@ function App() {
             name={coin.name}
             image={coin.image}
             symbol={coin.symbol}
-            marketCap={coin.market_cap}
             price={coin.current_price}
             priceChange={coin.price_change_percentage_24h}
+            marketCap={coin.market_cap}
           />
         )
       })}
