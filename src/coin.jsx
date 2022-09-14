@@ -1,7 +1,15 @@
 import React from "react";
 import "./coin.css";
 
-const Coin = ({ image, name, symbol, price, priceChange, marketCap }) => {
+const Coin = ({
+  image,
+  name,
+  symbol,
+  price,
+  priceChange,
+  marketCap,
+  totalSupply,
+}) => {
   return (
     <div className="coin-container">
       <div className="coin-row">
@@ -11,6 +19,7 @@ const Coin = ({ image, name, symbol, price, priceChange, marketCap }) => {
           <p className="coin-symbol">{symbol}</p>
         </div>
         <div className="coin-data">
+          <p className="coin-total-supply"> ${Math.trunc(totalSupply)}</p>
           <p className="coin-price"> ${price}</p>
           {priceChange < 0 ? (
             //change for 24 hours

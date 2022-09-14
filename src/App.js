@@ -31,13 +31,14 @@ function App() {
           <input type="text" className="coin-input" placeholder="Search the coin..." onChange={handleChange} />
         </form>
       </div>
-      <ul className='tabs'>
-        <li className='tab'>Coin</li>
-        <li className='symbol'>Symbol</li>
-        <li className='tab'>Price</li>
-        <li className='tab'>24h</li>
-        <li className='tab'>Market Cap</li>
-      </ul>
+      <tr className='tabs'>
+        <th className='tab'>Coin</th>
+        <th className='symbol'>Symbol</th>
+        <th className='tab'>Total Supply</th>
+        <th className='tab'>Price</th>
+        <th className='tab'>24h</th>
+        <th className='tab'>Market Cap</th>
+      </tr>
       {filteredCoins.map(coin => {
         return (
           <Coin
@@ -48,6 +49,7 @@ function App() {
             price={coin.current_price}
             priceChange={coin.price_change_percentage_24h}
             marketCap={coin.market_cap}
+            totalSupply={coin.total_supply}
           />
         )
       })}
