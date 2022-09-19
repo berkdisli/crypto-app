@@ -19,7 +19,7 @@
 .tab {
   list-style-type: none;
   float: left;
-  margin-left: 90px;
+  margin-left: 55px;
   font-weight: bold;
   text-decoration: underline;
   color: rgb(138, 28, 21);
@@ -27,14 +27,16 @@
 .symbol {
   list-style-type: none;
   float: left;
-  margin-left: 150px;
+  padding-left: 100px;
   font-weight: bold;
   text-decoration: underline;
   color: rgb(138, 28, 21);
 }
 .tabs {
   margin-right: 158px;
-  justify-content: space-around;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 25px;
 }
 .tabs:after {
   display: table;

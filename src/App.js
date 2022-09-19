@@ -32,12 +32,12 @@ function App() {
         </form>
       </div>
       <tr className='tabs'>
-        <th className='tab'>Coin</th>
-        <th className='symbol'>Symbol</th>
-        <th className='tab'>Total Supply</th>
-        <th className='tab'>Price</th>
-        <th className='tab'>24h</th>
-        <th className='tab'>Market Cap</th>
+        <td className='tab'>Coin</td>
+        <td className='symbol'>Symbol</td>
+        <td className='tab'>Total Supply</td>
+        <td className='tab'>Price</td>
+        <td className='tab'>24h</td>
+        <td className='tab'>Market Cap</td>
       </tr>
       {filteredCoins.map(coin => {
         return (
