@@ -19,24 +19,23 @@
 .tab {
   list-style-type: none;
   float: left;
-  margin-left: 55px;
+  padding-left: 30px;
   font-weight: bold;
   text-decoration: underline;
   color: rgb(138, 28, 21);
 }
 .symbol {
+  padding-left: 30px;
   list-style-type: none;
   float: left;
-  padding-left: 100px;
   font-weight: bold;
   text-decoration: underline;
   color: rgb(138, 28, 21);
 }
 .tabs {
-  margin-right: 158px;
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 25px;
+  grid-column-gap: 70px;
 }
 .tabs:after {
   display: table;
