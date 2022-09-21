@@ -33,7 +33,7 @@ function App() {
       </div>
       <tr className='tabs'>
         <td className='tab'>Coin</td>
-        <td className='tab'>Symbol</td>
+        <td className='symbol'>Symbol</td>
         <td className='tab'>Total Supply</td>
         <td className='tab'>Price</td>
         <td className='tab'>24h</td>

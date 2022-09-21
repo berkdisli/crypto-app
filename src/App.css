@@ -79,11 +79,8 @@
     justify-content: center;
   }
   .tabs {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    float: left;
-    margin-left: 280px;
+    padding-left: 250px;
+    gap: 68px;
   }
   .symbol {
     display: none;

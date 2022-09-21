@@ -73,6 +73,15 @@
   .coin-symbol {
     padding-left: 50px;
   }
+  .coin-total-supply {
+    padding-left: 25px;
+  }
+  .coin-price {
+    padding-left: 40px;
+  }
+  .coin-percent {
+    padding-right: 40px;
+  }
   .coin-row {
     margin-left: 100px;
   }
